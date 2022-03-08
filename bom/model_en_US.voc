@@ -1,0 +1,5 @@
+
+# com.gerry.utils.AgeHelper
+com.gerry.utils.AgeHelper#concept.label = age helper
+com.gerry.utils.AgeHelper.AgeHelper()#phrase.navigation = a new {age helper}
+com.gerry.utils.AgeHelper.getAge(java.time.LocalDate,java.time.LocalDate)#phrase.navigation = the age of someone on {0} who was born on {1}

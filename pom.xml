@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.gerry.ads</groupId>
+    <artifactId>ads-2103-utils</artifactId>
+    <version>1.0.5</version>
+
+    <name>Gerry's ADS Utilities</name>
+    <description>Gerry's ADS Utilities
+    </description>
+    <properties>
+        <ads-mojo.version>6.1.5.1</ads-mojo.version>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <archive.repository.release.url>https://nexus-secure-nexus.mycluster-lon02-m-753506-146c6c4a55409bbdb5403b1a18bbffeb-0000.eu-gb.containers.appdomain.cloud/repository/ads-releases/</archive.repository.release.url>
+    </properties>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.ibm.decision</groupId>
+                    <artifactId>build-maven-plugin</artifactId>
+                    <version>${ads-mojo.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>com.ibm.decision</groupId>
+                <artifactId>build-maven-plugin</artifactId>
+                <version>${ads-mojo.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>export</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <deployments>
+                        <deployment>
+                            <name>${project.artifactId}</name>
+                        </deployment>
+                    </deployments>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.ibm.decision</groupId>
+                <artifactId>import-maven-plugin</artifactId>
+                <version>${ads-mojo.version}</version>
+                <executions>
+                    <execution>
+                        <id>generate-external-annotations-BOM-Voc</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <skip>false</skip>
+                            <locales>
+                                <locale>en_US</locale>
+                            </locales>
+                            <importMethods>true</importMethods>
+                            <referenceFolder>reference</referenceFolder>
+                        </configuration>
+                        <goals>
+                            <goal>import</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.gerry.utils</groupId>
+            <artifactId>java-utils</artifactId>
+            <version>1.1</version>
+        </dependency>
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>ads-releases</id>
+            <url>${archive.repository.release.url}</url>
+        </repository>
+    </distributionManagement>
+
+</project>
