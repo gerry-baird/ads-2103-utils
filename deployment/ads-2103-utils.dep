@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="com.gerry.ads:ads-2103-utils" ruleAppVersion="1.0.5" managingXom="true">
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="com.gerry.ads:ads-2103-utils" ruleAppVersion="1.3" managingXom="true">
   <name>ads-2103-utils</name>
   <uuid>1808ee54-97b0-4e64-9b69-479781656595</uuid>
   <locales>en_US</locales>

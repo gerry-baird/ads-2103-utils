@@ -5,7 +5,7 @@
 
     <groupId>com.gerry.ads</groupId>
     <artifactId>ads-2103-utils</artifactId>
-    <version>1.0.5</version>
+    <version>1.3</version>
 
     <name>Gerry's ADS Utilities</name>
     <description>Gerry's ADS Utilities
@@ -14,7 +14,7 @@
         <ads-mojo.version>6.1.5.1</ads-mojo.version>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <archive.repository.release.url>https://nexus-secure-nexus.mycluster-lon02-m-753506-146c6c4a55409bbdb5403b1a18bbffeb-0000.eu-gb.containers.appdomain.cloud/repository/ads-releases/</archive.repository.release.url>
+        <archive.repository.release.url>https://nexus-secure-nexus.mycluster-lon02-m-753506-146c6c4a55409bbdb5403b1a18bbffeb-0000.eu-gb.containers.appdomain.cloud/repository/ads-plugins/</archive.repository.release.url>
     </properties>
     <build>
         <pluginManagement>
@@ -75,13 +75,13 @@
         <dependency>
             <groupId>com.gerry.utils</groupId>
             <artifactId>java-utils</artifactId>
-            <version>1.1</version>
+            <version>1.3</version>
         </dependency>
     </dependencies>
 
     <distributionManagement>
         <repository>
-            <id>ads-releases</id>
+            <id>ads-plugins</id>
             <url>${archive.repository.release.url}</url>
         </repository>
     </distributionManagement>

@@ -1,5 +1,9 @@
 
-# com.gerry.utils.AgeHelper
-com.gerry.utils.AgeHelper#concept.label = age helper
-com.gerry.utils.AgeHelper.AgeHelper()#phrase.navigation = a new {age helper}
+# verbalisation for com.gerry.utils.AgeHelper
 com.gerry.utils.AgeHelper.getAge(java.time.LocalDate,java.time.LocalDate)#phrase.navigation = the age of someone on {0} who was born on {1}
+
+# verbalisation for com.gerry.utils.RegexHelper
+com.gerry.utils.RegexHelper.getMatches(java.lang.String,java.lang.String)#phrase.navigation = extract matches for pattern {1, <regex>} from text {0, <source>}
+com.gerry.utils.RegexHelper.patternFound(java.lang.String,java.lang.String)#phrase.navigation = regex pattern {1, <pattern String>} can be found in {0, <source String>}
+com.gerry.utils.RegexHelper.matchesCount(java.lang.String,java.lang.String)#phrase.navigation = the number of matches of pattern {1, <regex>} in text {0, <source>}
+com.gerry.utils.RegexHelper.patternDoesMatch(java.lang.String,java.lang.String)#phrase.navigation = text {0, <source>} matches pattern {1, <regex>}

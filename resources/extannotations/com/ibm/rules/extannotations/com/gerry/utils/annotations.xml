@@ -2,4 +2,7 @@
   <item name="com.gerry.utils.AgeHelper AgeHelper()">
     <annotation name="com.ibm.rules.engine.annotations.PureFunction"/>
   </item>
+  <item name="com.gerry.utils.RegexHelper RegexHelper()">
+    <annotation name="com.ibm.rules.engine.annotations.PureFunction"/>
+  </item>
 </root>

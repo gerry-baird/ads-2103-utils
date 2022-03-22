@@ -13,3 +13,19 @@ public class AgeHelper
                 property pureFunction "true";
 }
 
+public class RegexHelper
+{
+    public RegexHelper()
+                property groups "BALA"
+                property prototype "true"
+                property pureFunction "true";
+    public static java.util.List getMatches(string arg1, string arg2) domain 0,* class string
+                property pureFunction "true";
+    public static int matchesCount(string arg1, string arg2)
+                property pureFunction "true";
+    public static boolean patternDoesMatch(string arg1, string arg2)
+                property pureFunction "true";
+    public static boolean patternFound(string arg1, string arg2)
+                property pureFunction "true";
+}
+
